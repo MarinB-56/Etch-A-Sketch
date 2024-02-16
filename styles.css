@@ -1,0 +1,26 @@
+body{
+    margin : 0;
+    text-align: center;
+    font: 1em sans-serif;
+    background-color: beige;
+}
+
+.grid_container{
+    background-color: white; 
+    /* margin: 30px; */
+    display: flex; 
+    flex-wrap: wrap;
+    height: 60vh;
+    max-width: 500px;
+    border-radius: 2%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.grid_div{
+    /* border: 1px solid brown; */
+    width: 6.25%;
+    flex-grow: 1;
+    box-sizing: border-box; /* s'adapte au conteneur */
+}
+
