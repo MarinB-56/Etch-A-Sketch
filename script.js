@@ -1,4 +1,5 @@
 const div = document.querySelector('div');
+const clear_button = document.querySelector('button');
 
 //Creating the grid of square divs 
 function grid_creation(){
@@ -10,11 +11,14 @@ function grid_creation(){
 
             div.appendChild(new_div);
 
+            //Adding the possibility to change the color of a square when hovered
+            new_div.addEventListener('mouseover',() =>{
+                // console.log("coucou");
+                new_div.style.cssText="background-color : blue";
+            })
         }
     }
 }
-
-
 
 grid_creation();
 
