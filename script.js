@@ -14,7 +14,10 @@ function grid_creation(){
             //Adding the possibility to change the color of a square when hovered
             new_div.addEventListener('mouseover',() =>{
                 // console.log("coucou");
-                new_div.style.cssText="background-color : blue";
+                const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                new_div.style.cssText = `background-color : #${randomColor}`;
+
+                console.log(randomColor);
             })
         }
     }
