@@ -1,5 +1,6 @@
 const div = document.querySelector('div');
-const clear_button = document.querySelector('button');
+const clear_button = document.querySelector('.clear_button');
+const erase_button = document.querySelector('.erase_button');
 
 //Creating the grid of square divs 
 function grid_creation(){
@@ -17,12 +18,18 @@ function grid_creation(){
                 const randomColor = Math.floor(Math.random()*16777215).toString(16);
                 new_div.style.cssText = `background-color : #${randomColor}`;
 
-                console.log(randomColor);
+                // console.log(randomColor);
             })
 
+            //Button to clear everything on the grid (general eraser)
             clear_button.addEventListener('click', () => {
-                console.log("oui");
                 new_div.style.cssText = "background-color : white ";
+            })
+
+            //Button to make the selected div white (precise eraser)
+            erase_button.addEventListener('click', () =>{
+                
+                randomColor = "#FFFFFF";
             })
         }
     }
