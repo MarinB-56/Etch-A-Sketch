@@ -1,0 +1,13 @@
+OPTION GOMME
+
+OPTION MOSAIQUE
+-> Image apparaît non coloriée 
+-> Seul un petit point de couleur est dessiné dans le div 
+-> Couleur choisie automatiquement par le programme qui laisse apparaître le dessin au fur et à mesure
+
+Boutton pour choisir l'option 
+-> Charge automatiquement une image 
+-> Remplace les div existantes par de nouvelles div 
+
+OPTION CHOIX DE COULEUR UNIQUE
+
