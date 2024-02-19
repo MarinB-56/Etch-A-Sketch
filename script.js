@@ -2,6 +2,10 @@ const div = document.querySelector('div');
 const clear_button = document.querySelector('.clear_button');
 const erase_button = document.querySelector('.erase_button');
 
+//Color
+let randomColor = 0;
+randomColor=Math.floor(Math.random()*16777215).toString(16);
+
 //Creating the grid of square divs 
 function grid_creation(){
     for(let i = 0;i<16; i++){
@@ -15,7 +19,6 @@ function grid_creation(){
             //Adding the possibility to change the color of a square when hovered
             new_div.addEventListener('mouseover',() =>{
                 // console.log("coucou");
-                const randomColor = Math.floor(Math.random()*16777215).toString(16);
                 new_div.style.cssText = `background-color : #${randomColor}`;
 
                 // console.log(randomColor);
@@ -27,8 +30,8 @@ function grid_creation(){
             })
 
             //Button to make the selected div white (precise eraser)
-            erase_button.addEventListener('click', () =>{
-                
+            erase_button.addEventListener('click', () =>{    
+                console.log("erase");
                 randomColor = "#FFFFFF";
             })
         }
