@@ -19,10 +19,16 @@ function grid_creation(){
 
                 console.log(randomColor);
             })
+
+            clear_button.addEventListener('click', () => {
+                console.log("oui");
+                new_div.style.cssText = "background-color : white ";
+            })
         }
     }
 }
 
+//Implementation of clear button
 grid_creation();
 
 
